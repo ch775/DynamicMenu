@@ -1,0 +1,24 @@
+.section {
+    min-height: 100em;
+}
+
+/* Add stick class to navigation when scroll */
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #navigation {
+      z-index: 5;
+      background-color: pink;
+      width: 100%;
+  }
+
+  h2 {
+      z-index: 1;
+  }
+
+  .highlight {
+      font-weight: bold;
+  }

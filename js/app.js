@@ -8,6 +8,7 @@ const navigation = document.querySelector("#navigation");
 //This loops over the number of sections and ads a div with section name for each.
 for (var i=0; i < sections.length; i++) {
     const newMenuItemDiv = document.createElement ('div'); //This creates a new div for menu
+    newMenuItemDiv.classList.add("menuItem");
     const menuItemText = document.querySelectorAll(".menuItem")[i].firstChild.nodeValue; //This grabs the inner text from the sections h2 tag.
     const menuItem = newMenuItemDiv.innerHTML += menuItemText; //Adds text to new div
     navigation.insertAdjacentHTML('beforeend', menuItem); //This adds menu item to nav
@@ -15,6 +16,20 @@ for (var i=0; i < sections.length; i++) {
 
 
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickWhenScroll()};
+
+// Get the offset position of the navigation
+let stick = navigation.offsetTop;
+
+// Add the stick class to the navigation when you reach its scroll position. Remove stick when you leave the scroll position
+function stickWhenScroll() {
+  if (window.pageYOffset >= stick) {
+    navigation.classList.add("stick")
+  } else {
+    navigation.classList.remove("stick");
+  }
+}
 
 
 
