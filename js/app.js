@@ -7,7 +7,7 @@ const navigation = document.querySelector("#navigation");
 
 //This loops over the number of sections and ads a div with section name for each.
 for (var i=0; i < sections.length; i++) {
-    const newMenuItemDiv = document.createElement ('a'); //This creates a new div for menu
+    const newMenuItemDiv = document.createElement ('a'); //This creates a new a for menu
     newMenuItemDiv.classList.add("menuItem2");
     const menuItemText = document.querySelectorAll(".menuItem")[i].firstChild.nodeValue; //This grabs the inner text from the sections h2 tag.
     newMenuItemDiv.innerHTML = menuItemText;
@@ -15,6 +15,9 @@ for (var i=0; i < sections.length; i++) {
     navigation.append(newMenuItemDiv); //This adds menu item to nav
 };
 
+//This ads the class to the first navigation element
+const navFirst = document.querySelector(".menuItem2");
+navFirst.classList.add("active");
 
 
 // When the user scrolls the page, execute myFunction
@@ -41,5 +44,43 @@ for (var i=0; i < sections.length; i++) {
     anchorTag[i].setAttribute('href', `#${sectionIDs}`);
 };
 
+
+
+//This moves the active class down as a user scrolls through the sections
+    
+//const sectionForScroll= document.getElementsByClassName('menuItem2');
+//const scrollPosActual = sectionForScroll[3].scrollTop;
+//console.log(scrollPosActual);
+//console.log(sectionScroll[3].getBoundingClientRect());
+
+//window.addEventListener ("scroll", () =>{
+    //const scrollPos = window.scrollY;
+    //console.log(scrollPos);
+//});
+
+
+function onScroll(event){
+    var sectionsA = document.querySelectorAll('#navigation a');
+    var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    
+    for( var i = 0; i < sectionsA.length; i++ ){
+      var currLink = sectionsA[i]; 
+      var val = currLink.getAttribute('href');
+      var refElement = document.querySelector(val);
+        if( refElement.offsetTop <= scrollPos && ( refElement.offsetTop + refElement.offsetHeight > scrollPos)){
+          document.querySelector('#navigation a').classList.remove('active');
+          currLink.classList.add('active');
+        }else{
+           currLink.classList.remove('active');
+         }
+    }
+    
+    
+                                                             
+      
+  };
+  
+  window.document.addEventListener('scroll', onScroll );
+  
 
 
