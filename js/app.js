@@ -7,7 +7,7 @@ const navigation = document.querySelector("#navigation");
 
 //This loops over the number of sections and ads a div with section name for each.
 for (var i=0; i < sections.length; i++) {
-    const newMenuItemDiv = document.createElement ('div'); //This creates a new div for menu
+    const newMenuItemDiv = document.createElement ('a'); //This creates a new div for menu
     newMenuItemDiv.classList.add("menuItem2");
     const menuItemText = document.querySelectorAll(".menuItem")[i].firstChild.nodeValue; //This grabs the inner text from the sections h2 tag.
     newMenuItemDiv.innerHTML = menuItemText;
@@ -31,6 +31,15 @@ function stickWhenScroll() {
     navigation.classList.remove("stick");
   }
 }
+
+
+//This loops over the number of sections and ads the link to it's appropriate section
+for (var i=0; i < sections.length; i++) {
+    const anchorTag = document.getElementsByClassName("menuItem2"); 
+    const sections = document.getElementsByClassName("section");
+    const sectionIDs = document.getElementsByClassName("section")[i].id;
+    anchorTag[i].setAttribute('href', `#${sectionIDs}`);
+};
 
 
 
