@@ -221,3 +221,17 @@ p.fancyText {
     max-width: 15em;
 }
   
+/*This is the footer CSS */ 
+
+#footer {
+    min-height: 10em;
+    background-color: #767b67;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+#footer a {
+    color: #ffffff;
+}
