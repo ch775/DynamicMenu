@@ -161,6 +161,97 @@ h2 {
     margin-top: 0;
 }
 
+i {
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.footerSocial {
+    padding-top: 1em;
+}
+
+.largeContainer {
+    display: flex;
+    min-width: 98%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    background-color: #ffffff;
+}
+
+.box {
+     width: 50%;
+     outline: 4px solid #ffffff;
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     background-color: aqua;
+}
+
+.smallBox {
+    min-width: 50%;
+    outline: 4px solid #ffffff;
+    height: 8em;
+}
+
+.orangePhoto {
+    background-color: #b16d4a;
+    display: flex;
+    align-content: center;
+}
+
+.epicKiss, .standUp{
+    height: 13em;
+    margin: 0 auto;
+}
+
+.greenPhoto {
+    background-color: #a6aea7;
+    display: flex;
+    align-content: center;
+}
+
+.smallBox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.balance {
+    background-image: url("img/balance.jpg");
+}
+
+.rockKiss {
+    background-image: url("img/RockKiss.jpg");
+}
+
+.running {
+    background-image: url("img/running.jpg");
+}
+
+.treeLookAway {
+    background-image: url("img/TreeLookAway.jpg");
+}
+
+.ring {
+    background-image: url("img/ring.jpg");
+}
+
+.shoulders {
+    background-image: url("img/shoulders.jpg");
+}
+
+.overShoulder {
+    background-image: url("img/overShoulder.jpg");
+}
+
+.flower {
+    background-image: url("img/flower.jpg");
+}
+
+.none {
+    display: none;
+}
 /*This is the CSS for the email section */ 
 
 #emailSection {
