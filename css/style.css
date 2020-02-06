@@ -26,6 +26,7 @@ body {
 #navigation {
       z-index: 5;
       background-color: #ffffff;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -35,15 +36,14 @@ body {
 
 /*This is the CSS for the header image */ 
 
-.header {
+#header {
     width: 100%;
     height: auto;
 }
 
 .centerText{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 2em auto;
+    width: 100%;
 }
 
 .headerText {
@@ -226,7 +226,7 @@ i {
 }
 
 .running {
-    background-image: url("img/Running.jpg");
+    background-image: url("img/running.jpg");
 }
 
 .treeLookAway {
@@ -331,18 +331,15 @@ p.fancyText {
 
 @media (max-width: 1580px) {
     .headerText {
-        top: 20%; 
-        left: 15%; 
+        top: 40%; 
+        left: 22%; 
     }
 }
 
 @media (max-width: 785px) {
     .headerText {
-        top: 16%; 
-        left: 20%; 
-    }
-    #header {
-        height: 10em;
+        top: 25%; 
+        left: 25%; 
     }
     .lightGrayBox, .whiteBox {
         flex-direction: column;
@@ -370,7 +367,7 @@ p.fancyText {
 
 @media (max-width: 665px) {
     .headerText {
-        top: 15%; 
+        top: 20%; 
         left: 20%; 
         font-size: 2em;
     }
@@ -389,8 +386,8 @@ p.fancyText {
 
 @media (max-width: 530px) {
     .headerText {
-        top: 13%; 
-        left: 12%; 
+        top: 16%; 
+        left: 15%; 
         font-size: 2em;
     }
 }
