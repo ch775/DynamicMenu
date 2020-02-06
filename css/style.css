@@ -173,7 +173,7 @@ i {
 
 .largeContainer {
     display: flex;
-    min-width: 98%;
+    width: 70%;
     margin: 0 auto;
     flex-wrap: wrap;
     margin-bottom: 2em;
@@ -368,6 +368,9 @@ input:focus, textarea:focus, select:focus{
 
     .kissingOne {
         margin-left: 0.5em;
+    }
+    .largeContainer {
+        width: 98%;
     }
 }
 
