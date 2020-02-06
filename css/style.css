@@ -267,6 +267,8 @@ i {
     width: 20em;
     outline: solid 2px #767b67;
     font-family: 'Cinzel', serif;
+    border: none;
+    border-radius: none;
 }
 
 .submit {
