@@ -1,33 +1,84 @@
-.section {
-    min-height: 100em;
+/*This is the CSS for the html */ 
+
+html {
+    background-color: #f1edea;
+    color: #838383;
+    font-family: 'Cinzel', serif;
 }
 
+a {
+    color: #838383;
+    text-decoration: none;
+}
+
+body {
+    margin: 1em 0 0 0;
+}
+
+/*This is the CSS for the navigation */ 
 /* Add stick class to navigation when scroll */
 .stick {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  #navigation {
+#navigation {
       z-index: 5;
-      background-color: pink;
+      background-color: #ffffff;
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-  }
+      padding: 0.7em;
+      text-transform: uppercase;
+}
 
-  h2 {
+/*This is the CSS for the header image */ 
+
+.header {
+    width: 100%;
+}
+
+.headerText {
+    position: absolute; 
+    top: 45%; 
+    left: 30%; 
+    width: 100%;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Cinzel', serif;
+}
+
+.lowerCase.fancyText {
+    text-transform: none;
+    font-size: 1.5em;
+}
+/*This is the CSS for the main sections */ 
+.section {
+    min-height: 100em;
+}
+
+h2 {
       z-index: 1;
-  }
+      font-weight: 100;
+      text-transform: uppercase;
+}
 
-  .highlight {
+.active {
       font-weight: bold;
-  }
+      color: #767b67;
+      text-decoration: underline;
+}
 
-  .active {
-      color: red;
-  }
+/*Saving for later */
+.green {
+      background-color: #767b67;
+}
 
+.fancyText {
+    font-family: 'Mrs Saint Delafield', cursive;
+}
   
