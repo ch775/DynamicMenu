@@ -327,6 +327,10 @@ p.fancyText {
     color: #ffffff;
 }
 
+input:focus, textarea:focus, select:focus{
+        outline: none;
+ }
+
 /*These are the media queries */ 
 
 @media (max-width: 1580px) {
