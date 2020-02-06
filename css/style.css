@@ -150,6 +150,59 @@ h2 {
     justify-content: center;
 }
 
+#aboutSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#aboutSection p.fancyText {
+    max-width: 17em;
+    margin-top: 0;
+}
+
+/*This is the CSS for the email section */ 
+
+#emailSection {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailform {
+    height: 2.15em;
+    width: 20em;
+    outline: solid 2px #767b67;
+    font-family: 'Cinzel', serif;
+}
+
+.submit {
+    height: 1.85em;
+    background-color: #ffffff;
+    outline: solid 2px #767b67;
+    font-family: 'Cinzel', serif;
+    padding: 0 0.3em;
+    display: flex;
+    align-items: center;
+}
+
+.submit:hover {
+    background-color: #767b67;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+/*This is the CSS for the social media section */ 
+#socialSection {
+    height: 500px;
+}
+
 /*Saving for later */
 .green {
       background-color: #767b67;
