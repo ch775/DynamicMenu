@@ -60,7 +60,7 @@ for (var i=0; i < sections.length; i++) {
     anchorTag[i].setAttribute('href', `#${sectionIDs}`);
 };
 
-
+//Scrolling onscroll event referenced from a codepen example
 
 function onScroll(event){
     var sectionsA = document.querySelectorAll('#navigation a');
