@@ -62,19 +62,6 @@ for (var i=0; i < sections.length; i++) {
 
 
 
-//This moves the active class down as a user scrolls through the sections
-    
-//const sectionForScroll= document.getElementsByClassName('menuItem2');
-//const scrollPosActual = sectionForScroll[3].scrollTop;
-//console.log(scrollPosActual);
-//console.log(sectionScroll[3].getBoundingClientRect());
-
-//window.addEventListener ("scroll", () =>{
-    //const scrollPos = window.scrollY;
-    //console.log(scrollPos);
-//});
-
-
 function onScroll(event){
     var sectionsA = document.querySelectorAll('#navigation a');
     var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
