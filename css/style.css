@@ -167,6 +167,10 @@ i {
     padding: 0.5em;
 }
 
+i:hover {
+    background-color: #767b67;
+}
+
 .footerSocial {
     padding-top: 1em;
 }
